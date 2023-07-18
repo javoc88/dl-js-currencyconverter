@@ -1,0 +1,42 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: #00a2fb !important;
+}
+
+.container {
+  background-color: #00619a;
+  padding-top: 3rem;
+  padding-bottom: 1px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem;
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+#currencySum {
+  text-align: center;
+  color: #002845;
+}
+
+#chartCurrency {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+

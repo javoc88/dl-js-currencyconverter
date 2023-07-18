@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Currency Converter API</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Conversor de monedas Nacional</h1>
+      <div class="card-coin">
+        <h3>Pesos CLP</h3>
+        <div class="input-group mb-3">
+          <input
+            type="number"
+            class="form-control"
+            aria-label="Amount"
+            id="clpInput"
+            placeholder="Ingrese el monto en CLP"
+          />
+        </div>
+        <h3>Divisa a convertir:</h3>
+        <div class="input-group">
+          <select class="form-select" id="currencyInput" aria-label="Currency">
+            <option disabled selected>Seleccione divisa</option>
+            <option value="dolar">USD</option>
+            <option value="euro">Euro</option>
+            <option value="bitcoin">Bitcoin</option>
+          </select>
+          <button class="btn btn-primary" id="btnCoin" type="button">
+            Convertir
+          </button>
+        </div>
+        <div class="currency-result" id="currencyResult">
+          <h4 id="currencySum"></h4>
+        </div>
+      </div>
+      <div class="div-error" id="divError"></div>
+      <div class="chart" id="chartCoin"><canvas id="chartCurrency"></canvas></div>
+    </div>
+    <!-- JS -->
+    <script src="./assets/js/main.js"></script>
+    <!-- Chart JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
